@@ -1,18 +1,151 @@
-<!--
-  Generated template for the HomePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>HomePage</ion-title>
+  <ion-navbar color="primary">
+    <ion-title text-center>Angular Material</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <h2>Icons</h2>
+  <mat-icon>home</mat-icon>
 
+  <h2>Basic Chips</h2>
+  <mat-chip-list>
+    <mat-chip>One fish</mat-chip>
+    <mat-chip>Two fish</mat-chip>
+    <mat-chip color="primary" selected="true">Primary fish</mat-chip>
+    <mat-chip color="accent" selected="true">Accent fish</mat-chip>
+  </mat-chip-list>
+
+
+  <h3>Basic Buttons</h3>
+  <div class="button-row">
+    <button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+    <a mat-button>Link</a>
+  </div>
+
+  <h3>Raised Buttons</h3>
+  <div class="button-row">
+    <button mat-raised-button>Basic</button>
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="accent">Accent</button>
+    <button mat-raised-button color="warn">Warn</button>
+    <button mat-raised-button disabled>Disabled</button>
+    <a mat-raised-button>Link</a>
+  </div>
+
+  <h3>Icon Buttons</h3>
+  <div class="button-row">
+    <button mat-icon-button>
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+    <button mat-icon-button color="primary">
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+    <button mat-icon-button color="accent">
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+    <button mat-icon-button color="warn">
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+    <button mat-icon-button disabled>
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+  </div>
+
+  <h3>Fab Buttons</h3>
+  <div class="button-row">
+    <button mat-fab>Basic</button>
+    <button mat-fab color="primary">Primary</button>
+    <button mat-fab color="accent">Accent</button>
+    <button mat-fab color="warn">Warn</button>
+    <button mat-fab disabled>Disabled</button>
+    <button mat-fab>
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+    <a mat-fab>Link</a>
+  </div>
+
+  <h3>Mini Fab Buttons</h3>
+  <div class="button-row">
+    <button mat-mini-fab>Basic</button>
+    <button mat-mini-fab color="primary">Primary</button>
+    <button mat-mini-fab color="accent">Accent</button>
+    <button mat-mini-fab color="warn">Warn</button>
+    <button mat-mini-fab disabled>Disabled</button>
+    <button mat-mini-fab>
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+    <a mat-mini-fab>Link</a>
+  </div>
+
+  <h2>Card</h2>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes
+        very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+  <h2>Tabs</h2>
+  <mat-tab-group class="demo-tab-group">
+    <mat-tab label="Tab 1">
+      <div class="demo-tab-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis
+        vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur
+        felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum
+        enim, vel tempor sapien arcu a tellus.
+      </div>
+    </mat-tab>
+    <mat-tab label="Tab 2">
+      <ng-template mat-tab-label>
+        ⭐
+      </ng-template>
+      <div class="demo-tab-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis
+        vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur
+        felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum
+        enim, vel tempor sapien arcu a tellus.
+      </div>
+    </mat-tab>
+    <mat-tab label="Tab 3" disabled>
+      No content
+    </mat-tab>
+    <mat-tab label="Tab 4">
+      <div class="demo-tab-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis
+        vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur
+        felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum
+        enim, vel tempor sapien arcu a tellus.
+        <br />
+        <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac
+        dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin
+        consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci
+        enim rutrum enim, vel tempor sapien arcu a tellus.
+      </div>
+    </mat-tab>
+    <mat-tab label="Tab 5">
+      No content
+    </mat-tab>
+    <mat-tab label="Tab 6">
+      No content
+    </mat-tab>
+  </mat-tab-group>
 </ion-content>
